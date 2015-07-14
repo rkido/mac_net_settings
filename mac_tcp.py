@@ -1,7 +1,7 @@
 import os
 
 sudo = "sudo sysctl -w"
-ctl_var = [" net.inet.tcp.win_scale_factor=4", " net.inet.tcp.sendspace=1048576", " net.inet.tcp.recvspace=1048576", " net.inet.tcp.mssdflt=1300", " net.inet.tcp.slowstart_flightsize=20"]
+ctl_var = [" net.inet.tcp.win_scale_factor=4", " net.inet.tcp.sendspace=1048576", " net.inet.tcp.recvspace=1048576", " net.inet.tcp.mssdflt=1300"]
 
 for i in ctl_var:
     os.system(sudo + i)
